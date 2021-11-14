@@ -10,9 +10,9 @@ docker build -t imagen4 .
 
 
 Montas el contenedor con la imagen que has creado antes
-Con la opción -d queremos que el contenedor se ejecute en segundo plano
-Con la opción --name le damos un nombre personalizado al contenedor
-Con la opción -p le indicamos que queremos que se ejecute en el puerto 8080 de nuestro localhost y el puerto 80 del contenedor
+- Con la opción -d queremos que el contenedor se ejecute en segundo plano
+- Con la opción --name le damos un nombre personalizado al contenedor
+- Con la opción -p le indicamos que queremos que se ejecute en el puerto 8080 de nuestro localhost y el puerto 80 del contenedor
 
 docker run -d --name contenedor4 -p 8080:80 imagen4
 
