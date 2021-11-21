@@ -1,0 +1,13 @@
+# CLUSTER IP
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: cluster-ip-service
+spec:
+  selector:
+    app: nginx-service
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
